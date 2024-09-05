@@ -1,0 +1,27 @@
+@font-face {
+  font-family: Josefin;
+  src: url(../fonts/Josefin_Sans/JosefinSans-VariableFont_wght.ttf);
+}
+
+// Font weights
+$fontLight: 300;
+$fontNormal: 400;
+$fontSemibold: 600;
+
+// Colors variable
+$desatRed: hsl(0, 36, 70);
+$softRed: hsl(0, 93, 68);
+$darkGrayRed: hsl(0, 6, 24);
+
+$gradientWhite: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+$gradientRed: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+
+// General settings
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+}
