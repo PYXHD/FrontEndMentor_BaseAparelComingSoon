@@ -24,4 +24,18 @@ $gradientRed: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
 }
 body {
   min-height: 100vh;
+  display: grid;
+  grid-template-columns: 58% 42%;
+
+  @media screen and (max-width: 768px) {
+    display: block;
+  }
+
+  #desktopImg {
+    background: url(../img/hero-desktop.jpg) center/cover;
+
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+  }
 }

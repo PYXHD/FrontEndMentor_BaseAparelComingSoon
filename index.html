@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
 
     <title>Frontend Mentor | Base Apparel coming soon page</title>
 
@@ -13,23 +12,39 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <link rel="stylesheet" href="./assets/styles/index.css" />
   </head>
   <body>
     <div class="card">
       <div class="card_logo">
         <img src="./assets/img/logo.svg" alt="" />
       </div>
+      <div class="card_mobileImg"></div>
       <div class="card_description">
-        <h1 class="card_title">We're coming soon</h1>
+        <h1 class="card_title">We're <span>coming soon</span></h1>
         <p class="card_text">
           Hello fellow shoppers! We're currently building our new fashion store.
           Add your email below to stay up-to-date with announcements and our
           launch deals.
         </p>
-        <input type="text" name="" id="">
-        <input type="submit" value="">
+        <div class="card_form">
+          <input
+            id="input"
+            class="card_input"
+            type="text"
+            placeholder="Email Address"
+          />
+          <div id="submit" class="card_submit">
+            <img src="./assets/img/icon-arrow.svg" alt="" />
+          </div>
+          <div id="errorMessage" class="card_errorMessage">
+            Please provide a valid email
+          </div>
+        </div>
       </div>
     </div>
     <div id="desktopImg"></div>
+
+    <script src="./assets/javascript/index.js"></script>
   </body>
 </html>
